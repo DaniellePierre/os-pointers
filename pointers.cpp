@@ -36,6 +36,7 @@ int main(int argc, char **argv)
     
     std::cout << "Please enter how many assignments were graded: ";
     std::cin >> student.n_assignments;
+    std::cout << std::endl;
     
     
     for(int i = 0; i<student.n_assignments; i++){
@@ -44,14 +45,13 @@ int main(int argc, char **argv)
     }
 
     std::cout << std::endl;
-    std::cout << std::endl;
     
     // Call `CalculateStudentAverage(???, ???)`
     calculateStudentAverage(&student, &average);
 
     // Output `average`
-    std::cout << "Student: " << student.f_name <<" "<< student.l_name << "[" << student.id <<"]" << std::endl;
-    std::cout << "Average grade: ";
+    std::cout << "Student: " << student.f_name <<" "<< student.l_name << " [" << student.id <<"]" << std::endl;
+    std::cout << "  Average grade: ";
     printf("%0.1f", average);
     std::cout << std::endl;
 
